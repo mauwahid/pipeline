@@ -1,0 +1,11 @@
+<zk>	
+	<zscript>
+<![CDATA[
+     org.zkoss.zul.theme.Themes.setTheme(Executions.getCurrent(),"shappire");    
+	 Executions.forward("login.zul");
+	
+]]>
+		
+	
+</zscript>
+</zk>

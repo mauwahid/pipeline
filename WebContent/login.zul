@@ -1,0 +1,30 @@
+<?page title="E Pipeline" contentType="text/html;charset=UTF-8"?>
+	<window  id="win_login" title="Login Pipeline" border="normal" mode="modal" width="400px" position="center" apply="mandiri.pipeline.act.LoginAct">
+	<grid>
+			<columns>
+				<column>
+				
+				</column>
+				<column>
+				</column>
+			</columns>
+			<rows>
+				<row>
+					<label>Username</label>
+					<textbox id="tb_username"></textbox>
+				</row>
+				<row>
+					<label>Password</label>
+					<textbox  type="password" id="tb_password" forward="onEnter=onLogin"></textbox>
+				</row>
+				
+				<row>
+						<label id="tb_confirm" visible="false">Maaf, Username dan Password Salah</label>
+				<hbox>
+						<button label="Login" forward="onClick=onLogin" mold="trendy"></button>
+				</hbox>
+					
+				</row>
+			</rows>
+		</grid>
+</window>

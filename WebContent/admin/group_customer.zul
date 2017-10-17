@@ -1,0 +1,28 @@
+<groupbox mold="3d" apply="mandiri.pipeline.act.admin.GroupCustomerAct">
+<caption label="Group Customer"></caption>
+<groupbox id="gbox_anchor">
+	<div align="right" >
+	<hbox>
+	<label value="Cari" style="font-size:10px"></label>
+	<textbox name="tb_cari" id="tb_cari" value="" readonly="false"></textbox>
+		<button label="Filter" forward="onClick=onSearch" mold="trendy" style="font-size:10px"/>
+		<button label="Reset" forward="onClick=onRefresh" mold="trendy" style="font-size:10px"/>		
+		<button label="Tambah" forward="onClick=onAdd" mold="trendy" style="font-size:10px"/>		
+	</hbox>
+	</div>
+</groupbox>
+<panel>
+	<panelchildren>																
+		<listbox id="list_groupCustomer" visible="true" style="z" mold="paging" checkmark="false" pageSize="15" sizedByContent="false" >
+			<listhead style="">
+				<listheader label="No" />
+				<listheader label="Nama"  />
+				<listheader label="Deskripsi"  />	<listheader label=""  />
+			
+			
+			</listhead>
+				</listbox>
+	</panelchildren>
+</panel>
+ </groupbox>
+ 
